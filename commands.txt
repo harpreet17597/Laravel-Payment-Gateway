@@ -1,0 +1,276 @@
+=====================================================================================================
+present working directory
+command:pwd
+=====================================================================================================
+
+=====================================================================================================
+Chnage directory
+command: cd "/c"
+=====================================================================================================
+
+=====================================================================================================
+Show list of files and folder
+command:ls 
+=====================================================================================================
+
+=====================================================================================================
+paste command for linus terminal 
+
+command: ctrl+insert
+=====================================================================================================
+
+=====================================================================================================
+TO SET USERNAME AND USEREMAIL
+
+command: git config --global user.name = "Happy"
+command: git config --gobal user.email = "harpreet@gmail.com"
+
+TO CHECK USERNAME AND USEREMAIL
+
+command: git config user.name
+command: git config user.email
+=====================================================================================================
+
+
+=====================================================================================================
+ TO INITIALIZE Git
+ 
+ command: git init
+
+ This command will initalize the git in the provided directory
+=====================================================================================================
+
+
+=====================================================================================================
+Git Status
+
+command: git status
+This command will show the
+1.untracked files
+2.staged files
+3.modified files
+=====================================================================================================
+
+
+=====================================================================================================
+
+To Add Files to Staging Directory
+
+command: git add -- a or git add .
+
+--a : It will add all files in the staging area
+
+To Stage particular file
+command: git add filename.ext
+=====================================================================================================
+
+
+=====================================================================================================
+TO make commit or take a Snapshot
+
+command: git commit -m "Initial Commit"
+
+-m : This is mesage provided during the commit
+=====================================================================================================
+
+
+=====================================================================================================
+To get list of commits
+
+command: git log
+
+This command will show all the commits done with name,email,date-time  and commit message
+=====================================================================================================
+
+
+=====================================================================================================
+To untrack git or remove .git
+
+command: rm -rf .git
+=====================================================================================================
+
+
+=====================================================================================================
+Cloning a Remote Git Repository from GitHub
+
+command: git clone remote-rep-path <optional> name
+=====================================================================================================
+
+
+=====================================================================================================
+To ignore file/folder
+
+step1: create a .igitignore file
+step2: add a file name or folder path to ignore
+
+Example
+
+ error.log (to ignore error.log file)
+ *.log (to ignore all .log files)
+ dir/ (to ignore all dir folders whether in parent or child directory)
+ /dir/ (only ignore dir folder in parent directory not in childe directory)
+ /static/dir/ (ignor only dir folder in static folder)
+=====================================================================================================
+
+
+=====================================================================================================
+GIT DIFF
+
+command: git diff
+
+This command compare working directory with staging area
+
+for example: we add abc.txt file in staging area and then we edit the abc.txt again.so here we have
+two versions of abc.txt file one in staging area and other in working directory.when we commit the abc.txt
+file it will commit the abc.txt file from staging area not from working directory.
+if we hit git add --a command again then it will merge the abc.txt file from working directory into the
+staging area.
+
+If we hit command:git diff before merge
+then it will show us differnce b/w staging area and working directory
+it will show you have two versions of abc.txt file
+----------------------------------------------------------------------------------
+
+command: git diff --staged
+
+This command will compare our staged with previous commit
+=====================================================================================================
+
+
+=====================================================================================================
+Skipping The Staging Area
+
+command: commit -a -m "Direct commit"
+=====================================================================================================
+
+
+=====================================================================================================
+Moving and Renaming Files 
+
+ There are two ways to remove a file
+ 1. remove file manullay and then add changes in the staging area after that commit the changes
+
+ 2. use git command to remove a file
+    command: git rm filename
+
+    By this method file automatic added to staging area after deleted
+
+ There are two ways to rename a file
+ 
+ 1. rename file manaually and then add it to staging area and then commit the changes
+ 2. use the git command to rename a file
+
+    command: git mv existingFilename newFilename
+
+    by this method file automatic added to staging area after renamed 
+=====================================================================================================
+
+
+=====================================================================================================
+
+ If we are tracking a file and then add that file in the .gitignore file. The git again make it modified area
+ if we do some changes in that file
+
+ Expl: becoz that file already added to track list of git so we have to move it into untracked file so
+ git ignore that file if any changes made to it
+
+ command: git rm --cached <filename>
+=====================================================================================================
+
+
+=====================================================================================================
+
+ To Show commit with diff
+
+ command: git log -p
+
+ This command will show the list of logs with changes that were made
+
+ command: git log -p -2
+ We can also specify the number of commits we want to show
+
+ ------------------------------
+  enter q to esc from commits logs
+ ------------------------------
+
+ command: git log --stat
+ This command will all the commit in a short way
+
+ command: git log --pretty=online
+ This command will show all commits in one line
+
+ command: git log --pretty=full
+
+ Author = who created the file first time
+ Commit = who make commit in the file
+
+ command: git log --since=2.days
+
+ command: git log --since=2.weeks
+
+ command: git log --since=2.months
+
+ command: git log --since=2.years
+
+ command: git log --pretty=format:"%h -- %an"
+
+ an == author name
+ ae == author email
+=====================================================================================================
+
+
+=====================================================================================================
+
+ How to merge changes in the existing commit and change the commit message
+
+ step1: make a changes in a file
+ step2: add files to staging area
+ step3: run command git commit --amend
+ It will open vim editor
+
+ step4: click i to edit and write your own commit message
+
+ step5: click escape and then click colon and write wq and hit enter
+=====================================================================================================
+
+=====================================================================================================
+
+  Unstaging & Unmodifying Files
+
+  unstaging
+  command: git restore --staged <filename>
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+
+=====================================================================================================
+=====================================================================================================
+

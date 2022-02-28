@@ -1,0 +1,70 @@
+git is Version Control System that gives us ability to track ,modify and restore our files
+
+================================================
+                History 
+================================================
+
+Local VCS:
+
+In the local vcs we track and make a record of files in a local machine.This system does not have any interaction with the internet.
+This sytem is not very reliable and easy to manage.In this system we make a record and track of our files through a Database.
+But it has limitation that it only restricted to loacal machine we can not share it with anyone and second there is a chance to lost our files due
+to system failure
+
+Centerlized VCS:
+
+In this system we track our files over the server.we make a pull and push over the server.but this system have an drawback of
+lossing files
+
+Distributed VSC:
+
+It is also silimar to the Centerlized system and with more capabilities and features.In this vcs we can take a pull of full resp
+and track our files on local machine.if bychance we lost our files over server but we have a full repo on our local setup.In this system
+multi person can work and commit the files and merge all the changes after work done.
+Best Example of Distributed Vcs is Git 
+
+======================================================================
+Linus torvalds makes a great contributes in developin Git
+======================================================================
+
+======================================================================
+Git and GitHub both are differnt thing
+
+git is software that is used to track an record our files.wherever GitHub is a hsoting server where we can host our 
+git repo
+======================================================================
+
+======================================================================
+Git:features
+
+1.Snapshot not differnce
+The git takes a Snapshot of our files wherever we make any change in the files
+
+2.Git has integrity
+we can confirm that files shared over internet is not modified by anyone by comapring the checksum
+the checksum must be same before sharing the file over internet and after receving
+
+======================================================================
+
+======================================================================
+Three Stage Architecture
+
+In Git we have three stage Architecture
+
+1.Working Directory
+2.Staging Area
+3.Git Directory (repository)
+
+when we commit we makes a new Snapshot
+only files in the staging area can commit to make new Snapshot
+
+If we want that file that have error doesnot go in the next commit then we doesnot
+include that file in the staging area .we will only that files in the staging area
+that we realy wnat to commit
+
+git directory is the .git hidden folder in which contains all our files in 
+the compressed form. In the responsibilty of the .git dir to restore our any commit files
+in the working directory.This directory contains all our commits
+=====================================================================================
+
+

@@ -288,9 +288,13 @@ now run  git st (to get status)
 Creating & Switching Branches
 
 TO CREATE NEW BRANCH
-command: git checkout -b develop
+command: git checkout -b <branchName>
 
 This command will create new branch and move us to that newly created branch
+
+-b = represent branch
+
+Example: git checkout -b develop
 =====================================================================================================
 
 =====================================================================================================

@@ -68,32 +68,6 @@ in the working directory.This directory contains all our commits
 =====================================================================================
 
 =====================================================================================
-Working with Remote Repositories
+Creating & Switching Branches
 
-command: git remote
-command: git remote -v
-
-remote = means remote repository
-
-git remote command to check our repository connect remotly
-
-git remote -v gives us two url for push and pull
-
-
-To connect our git with remote repo with GitHub
-
-1. create new repository
-2. git remote add origin https://github.com/harpreet001/repo-name
-3. git push -u origin master
-=====================================================================================
-
-=====================================================================================
-To generate .ssh key
-
-1. ssh-keygen -t rsa -b 4096 -C "harpreetsingh17597@gmail.com"     ==> creating ssh key
-2. eval $(ssh-agent -s)                                            ==> running ssh agent
-3. ssh-add ~/.ssh/id_rsa                                           ==> adding ssh key to ssh agent
-4. tail ~/.ssh/id_rsa.pub                                          ==> showing .ssh key
-=====================================================================================
-
-
+=====================================================================================f
